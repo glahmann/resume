@@ -1,11 +1,39 @@
-\documentclass[line, margin]{res}
+\documentclass[9pt, a4paper]{moderncv}
+\moderncvtheme[blue]{classic}
+
+\usepackage[utf8]{inputenc}
+
+\usepackage[scale=0.8]{geometry}
+\recomputelengths % Not sure if needed: required when changes are made to page layout
+
+\firstname{Garrett}
+\familyname{Lahmann}
+\title{Software Developer}
+\address{Tacoma WA 98405}
+\mobile{111.111.1111} % Change before sending
+\email{11111@uw.edu} % Change before sending
+
+%\homepage{lahmann.onl}
+%\photo[64pt][0.4pt]{mypic}
+%\social[github]{glahmann}
+
+
+
 
 \begin{document}
-\name{Garrett Lahmann}
-\address{Tacoma, WA 98405 \\ (###) ###-####}
+\vspace*{-2\baselineskip}   % Control line spacing
+\maketitle
+\vspace{-1.5\baselineskip}
+\section{Summary}
+\cvline{A great skill}{lorem ipsum}
 
-\begin{resume}
+\section{Technical skills}
+\cvline{A great skill}{Lorem ipsum}
 
+\section{Experience}
+\cventry{2000--present}{fabber}{Eubanks}{Centralia, WA}{}{Lorem ipsum}
 
-\end{resume}
+\closesection{}     % Needed to renew commands?
+\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
 \end{document}
