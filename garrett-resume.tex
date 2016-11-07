@@ -1,37 +1,61 @@
-\documentclass[9pt, a4paper]{moderncv}
-\moderncvtheme[blue]{classic}
+\documentclass[11pt,a4paper,unicode]{moderncv}
+
+\moderncvtheme[green]{classic}
 
 \usepackage[utf8]{inputenc}
 
 \usepackage[scale=0.8]{geometry}
-\recomputelengths % Not sure if needed: required when changes are made to page layout
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+\recomputelengths % required when changes are made to page layout
 
-\firstname{Garrett}
-\familyname{Lahmann}
+% Set hyperlink colors
+\definecolor{linkcolour}{rgb}{0.35,0.70,0.30}			% hyperlinks setup
+\AfterPreamble{\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}}
+
+% Name & Title
+\name{Garrett}{Lahmann}
 \title{Software Developer}
-\address{Tacoma WA 98405}
-\mobile{111.111.1111} % Change before sending
+
+% Contact info
+\address{Tacoma, WA 98405}
+\phone[mobile]{111.111.1111} % Change before sending
 \email{11111@uw.edu} % Change before sending
-
+\social[github][www.github.com/glahmann]{glahmann}
+\social[linkedin][www.linkedin.com/in/garrett-lahmann-3246a8b9]{garrett-lahmann}
 %\homepage{lahmann.onl}
-%\photo[64pt][0.4pt]{mypic}
-%\social[github]{glahmann}
-
-
-
+\photo[64pt][0.4pt]{linkedFace.jpg}
 
 \begin{document}
+
 \vspace*{-2\baselineskip}   % Control line spacing
 \maketitle
 \vspace{-1.5\baselineskip}
-\section{Summary}
-\cvline{A great skill}{lorem ipsum}
 
-\section{Technical skills}
-\cvline{A great skill}{Lorem ipsum}
+\section{Education}
+%\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
+\cventry{June 2018 (expected)}{Bachelor of Science in Computer Science and Systems}{\newline University of Washington}{Tacoma}{\textit{GPA: 3.9}}{}
+\cventry{June 2013}{Bachelor of Arts in East Asian Studies}{Western Washington University}{}{}{hello}
 
-\section{Experience}
-\cventry{2000--present}{fabber}{Eubanks}{Centralia, WA}{}{Lorem ipsum}
+\section{Projects}
+%\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
+\cventry{Java}{Commercial Storefront Bid Estimator}{}{}{}{A tool to keep track of bids and minimize losses due to material excess.}
+\cventry{Java}{Easy Street}{}{}{}{Backend for a simple vehicle interaction simulator.}
+%\cventry{HTML}{Personal Website}{}{}{}{A website to showcase the projects I complete outside of class.}
+
+\section{Honors}
+\cventry{October 2016}{Top 3 finalist}{T-Mobile IoT Hackathon}{Seattle}{}{Description here...}
+\cventry{June 2016}{Best Use of Classroom}{Vive Jam Educational VR Hackathon}{Seattle}{}{A VR safety simulation that teaches kids how to react in a realistic classroom fire situation.} % TODO Use better wording
+\cventry{June 2015}{Best Overall}{CodeDay}{Auburn, WA}{}{description here}
+
+\section{Skills}
+\cvline{Advanced}{Java}
+\cvline{Moderate}{Python}
+\cvline{Basic}{Javascript, HTML, C++}
+\cvline{Misc.}{Eclipse, IDLE, OSX, Office, Windows}
+
+\section{Professional Experience}
+\cventry{2015--present}{Lead Fabricator}{Eubanks Glass}{Centralia, WA}{}{Construct commercial window installations from blueprint layouts.}
+\cventry{2014--2015}{English Instructor}{Sesame Street English}{Taipei, Taiwan}{}{Design and teach language lessons to students of all ages.}
 
 \closesection{}     % Needed to renew commands?
 \renewcommand{\listitemsymbol}{-} % change the symbol for lists
