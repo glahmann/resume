@@ -4,7 +4,8 @@
 
 \usepackage[utf8]{inputenc}
 
-\usepackage[scale=0.8]{geometry}
+%\usepackage[scale=0.8]{geometry}
+\usepackage[margin=0.5in]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
 \recomputelengths % required when changes are made to page layout
 
@@ -17,9 +18,9 @@
 %\title{Software Developer} % Too specific, could get filtered out.
 
 % Contact info
-\address{Tacoma, WA 98405}
-\phone[mobile]{000.000.0000} % Change before sending
-\email{00000@uw.edu} % Change before sending
+\address{Issaquah, WA 98027}
+\phone[mobile]{360.556.1944} % Change before sending
+\email{lahmanng@gmail.com} % Change before sending
 \social[github][www.github.com/glahmann]{glahmann}
 \social[linkedin][www.linkedin.com/in/garrett-lahmann-3246a8b9]{garrett-lahmann}
 %\homepage{lahmann.onl}
@@ -27,41 +28,52 @@
 
 \begin{document}
 
-\vspace*{-2.5\baselineskip}   % Control line spacing
+%\vspace*{-3\baselineskip}   % Control line spacing
 \maketitle
-\vspace{-2\baselineskip}
+\vspace{-3\baselineskip}
 
 \section{Skills}
 
-\cvline{Advanced}{Java}
-\cvline{Moderate}{Python, Git}
-\cvline{Basic}{Javascript, Node.js, HTML, C++, SVN}
-\cvline{Misc.}{Eclipse, IDLE, OSX, Office, Windows}
+\cvline{Proficient}{C\#, Python, Spark, Java, Git, SQL, U-SQL}
+\cvline{Sufficient}{Azure, AWS, C, Databricks, Django, Docker, Golang, HTML, Javascript, Jenkins, PowerShell}
+\cvline{Misc.}{Bash/Zsh, Eclipse, Emacs, Jira, Jupyter, Power BI, Rally, Unix/Linux}
 
 \section{Education}
 
 %\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
-\cventry{June 2018 (expected)}{Bachelor of Science in Computer Science and Systems}{\newline University of Washington}{Tacoma}{\textit{GPA: 3.9}}{Completed: OOP focused programming courses in Python and Java. In progress: discrete mathematics and advanced applications of Java.}
-\cventry{June 2013}{Bachelor of Arts in East Asian Studies}{\newline Western Washington University}{Bellingham}{}{Coursework included a focus on Chinese language acquisition, as well as cultural and political studies of China and Japan.}
+\cventry{June 2018}{Bachelor of Science in Computer Science and Systems}{\newline University of Washington}{Tacoma}{\textit{GPA: 3.88}}{}
+\cventry{June 2013}{Bachelor of Arts in East Asian Studies and Chinese Language}{\newline Western Washington University}{Bellingham}{}{} % Coursework included a focus on Chinese language acquisition, as well as cultural and political studies of China and Japan.
 
 \section{Honors}
 
-\cventry{October 2016}{Top 3 finalist}{T-Mobile IoT Hackathon}{Seattle}{}{Team BabyBand: a wearable IoT device to help monitor the well-being of your young child. \textit{Contribution}: worked with team to develop workflow, implemented sensors using Javascript and Node.js, setup bluetooth on the band for interaction with mobile devices.}
-\cventry{June 2016}{Dean's List}{University of Washington}{Tacoma}{}{}
-\cventry{June 2016}{Best Use of Classroom}{Vive Jam Educational VR Hackathon}{Seattle}{}{VR Fire Drill: a safety simulation that teaches kids how to react in a realistic classroom fire situation. \textit{Contribution}: implemented audio features using Unity, tested program for bugs and usability.}
-\cventry{June 2015}{Best Overall}{CodeDay}{Auburn}{}{TravelTag: a travel journal application to keep track of memorable moments. \textit{Contribution}: designed features, worked with teammates to set project direction, organized flow of website.}
+\cventry{March 2017}{3rd place}{T-Mobile Big Data Hackathon}{Bellevue}{}{Team Hikeaway: a hike recommendation app. \textit{Contribution}: Wrote backend code for database interaction and algorithm controlling user/hike difficulty levels.}
+\cventry{October 2016}{2nd place}{T-Mobile IoT Hackathon}{Seattle}{}{Team BabyBand: a wearable IoT device to help monitor the well-being of your young child. \textit{Contribution}: worked with team using agile development techniques, implemented sensors using Javascript and Node.js, setup bluetooth on the band for interaction with mobile devices.}
+% \cventry{June 2016}{Dean's List}{University of Washington}{Tacoma}{}{}
+\cventry{June 2016}{Best User Design}{Vive Jam Educational VR Hackathon}{Seattle}{}{VR Fire Drill: a safety simulation that teaches kids how to react in a realistic classroom fire situation. \textit{Contribution}: implemented audio features using Unity, tested program for bugs and usability.}
+\cventry{June 2015}{Best Overall}{CodeDay}{Auburn}{}{TravelTag: a travel journal application to keep track of memorable moments. \textit{Contribution}: built interactive map using HTML and CSS, worked with teammates to set project direction, organized flow of website.}
 
 \section{Projects}
 
 %\cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}
-\cventry{Java}{Storefront Bid Estimator}{}{}{}{Built a tool to keep track of bids and minimize losses due to material excess. Simplifies the process of bidding commercial glass jobs.}
-\cventry{Java}{Easy Street}{}{}{}{Wrote backend for a simple vehicle simulator. Several types of vehicles drive and interact with each other on a closed course, exhibiting class dependent behavior.}
+\cventry{C\#, Python, Spark, SQL, Docker}{Container Memory Allocation Discrepancy Research}{Academic}{}{}{An investigation of container resource utilization trends on a cloud-based container deployment platform. Findings presented at 2018 IEEE Workshop on Containers.}
+\cventry{Python, MySQL, Django}{Hikeaway}{Team}{}{}{A hike recommendation app that uses databases and AI to find nearby hikes that match most closely to users' skill levels, built with a robust backend that can be integrated into any kind of application.}
+\cventry{Java}{Storefront Bid Estimator}{Personal}{}{}{A tool to keep track of bids and minimize losses with a recursive algorithm that optimizes material usage. Simplifies the process of bidding jobs for commercial glass industry professionals.}
+%\cventry{Java}{PowerPaint}{}{}{}{Wrote front and backend for a GUI based paint program that allows users to create and save static drawings.}
+\cventry{Java}{Tetris}{Personal}{}{}{A GUI based Tetris game built using model view controller and observer design patterns.}
 %\cventry{HTML}{Personal Website}{}{}{}{A website to showcase the projects I complete outside of class.}
 
 \section{Professional Experience}
 
-\cventry{2015--present}{Commercial Framer}{Eubanks Glass}{Centralia, WA}{}{Construct commercial window installations from blueprint layouts.}
-\cventry{2014--2015}{English Instructor}{Sesame Street English}{Taipei, Taiwan}{}{Designed and taught language lessons to students up to middle school aged.}
+\cventry{2018--Present}{Software Engineer}{T-Mobile}{Bellevue, WA}{}{Build cloud based analytics solutions using Python, Spark, GoLang, and Docker. Analyze utilization and billing data to make efficiency improvement suggestions to app teams.}
+\cventry{2017--2018}{Cloud Development Intern}{T-Mobile}{Bellevue, WA}{}{Automate AWS cost and usage analysis using U-SQL, C\#, and Azure resources. Produce reports in Power BI. Build ARM templates to provision Azure resource groups. Create APIs for easier access to billing data. Architect a data flow pipeline from Docker containers to a SQLServer database using Spark and Azure resources.}
+\cventry{2016--2018}{Volunteer Coding Instructor}{Coder Dojo}{Bellevue, WA}{}{Educate youth in fundamental coding logic and object oriented programming best practices using Python, Java, and Scratch.}
+\cventry{2015--2017}{Commercial Framer}{Eubanks Glass}{Centralia, WA}{}{Built a Java tool to improve accuracy of bidding process and streamline design of commercial window installations.}
+
+\section{Coursework and Extracurriculars}
+
+\cvline{Classes}{Algorithms, Cloud Development, Data Structures, Discrete Math, Operating Systems, Software Development}
+\cvline{Clubs}{HuSCII Coding - Officer 2016-2018}
+\cvline{Dean's List}{2016,2017,2018}
 
 \closesection{}                   % Needed to renew commands
 \renewcommand{\listitemsymbol}{-} % change the symbol for lists
